@@ -27,11 +27,15 @@ html *::after {
 body{
     
     margin: 0;
-    display: flex;
+    display: grid;
     height: 100vh;
+    grid-template-areas: 
+    'empty' 'header' 'empty'
+    'empty' 'name' 'empty'
+    'empty' 'footer' 'empty';
     overflow: hidden;
     align-items: baseline;
-    justify-content: center;
+    /*justify-content: center;*/
     background-color: #ffb457;
     -webkit-tap-highlight-color: transparent;
     transition: background-color var(--duration);
@@ -50,6 +54,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: var(--bgColorMenu);
+    grid-area: header;
     
 }
 
@@ -154,3 +159,17 @@ body{
         font-size: .8em;
     }
 }
+
+.cont{
+    color: white;
+    font-family: 'Fasthand', cursive;
+    grid-area: name;
+}
+
+
+    
+
+
+
+
+
