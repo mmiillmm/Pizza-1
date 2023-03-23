@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-image: url(/kepek/pizzahatter.jpg);
+    background-image: url(/20230313\ \ Pizzéria\ cssgrid\ oldal\ készítése/kepek/pizzahatter.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -94,6 +94,7 @@ button:active{
     grid-column: 4/ span 3;
     grid-row: 1;
     font-family: 'Fasthand', cursive;
+    
 
 }
 ul{
@@ -124,14 +125,7 @@ ul{
     justify-content: end;
     align-items: center;
     flex-flow: column;
-    grid-column: 5;
+    grid-column: 5/ span 2;
     grid-row: 5;
+    font-size: 20px;
 }
-
-
-    
-
-
-
-
-
