@@ -7,6 +7,10 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 
 .icon{
     grid-column: 1/ span 1;
@@ -22,6 +26,40 @@ body{
 #img{
     width: 100px;
     height: 100px;
+}
+
+#kosar{
+    width: 80px;
+    height: 50px;
+    
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px red solid;
+    border-radius: 30px;
+    color: red;
+    background-color: transparent;
+    margin-left: 50px;
+    padding: 30px;
+    width: 150px;
+    height: 40px;
+    font-family: 'Fasthand', cursive;
+    font-size: 25px;
+    line-height: 10px;
+    font-weight: 200px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgb(112, 34, 34);
+    border: 1px solid black;
+    width: 120px;
+    height: 35px;
 }
 
 
@@ -47,7 +85,7 @@ body{
     color: red;
 }
 .menu{
-    border-radius: 3px;
+    text-align: center;
     padding: 3px 6px;
     margin: 50px 50px;
 	display: flex;
