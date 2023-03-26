@@ -5,7 +5,7 @@
 body{
     background-image: url(/20230313\ \ Pizzéria\ cssgrid\ oldal\ készítése/kepek/fekete.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 160%;
 }
 a{
     text-decoration: none;
@@ -69,7 +69,7 @@ button:active{
 .cont{
     display: grid;
     grid-template-columns: repeat(9, 200px);
-    grid-template-rows: repeat(5,190px);
+    grid-template-rows: repeat(10,190px);
     color: white;
 }
 .menu{
@@ -108,79 +108,45 @@ ul{
     cursor: pointer;
 }
 
-.kosar{
-    /*background-color: white;*/
+.etlap{
+    background-color: rgba(0, 0, 0, 0.603);
+    border-radius: 20px;
     grid-column: 3 / span 6;
+    grid-row: 2/ span 8;
     margin-right: 50px;
-    padding-top: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 150px;
-    grid-row: 2;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    gap: 200px;
-    color: rgb(72, 66, 66);
-    background-color: rgba(255, 255, 255, 0.658);
-
 }
-
-
-.kosar p{
-    font-size: 25px;
-    margin-left: 30px;
-}
-
-.ossz{
-    grid-column: 4;
-    grid-row: 5;
-    color: rgb(72, 66, 66);
-    background-color: rgba(255, 255, 255, 0.658);
-    margin-bottom: 150px;
-    font-weight: bold;
+table{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 5px;
 }
 
-.ossz p{
-    font-size: 25px;
+.pizzak{
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 100px;
 }
-
-#ar{
-    grid-column: 5/ span 2;
-    grid-row: 5;
-    color: white;
-    border: 1px white solid;
-    margin-bottom: 150px;
-    font-weight: bold;
+p{
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 5px;
+    flex-flow: column;
+}
+
+p b{
     font-size: 25px;
 }
 
-select{
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.658);
-    width: 200px;
-    height: 50px;
-    margin-top: 30px;
+.nev{
     font-size: 20px;
-    border: 1px solid black;
-    font-weight: bold;
-    text-align: center;
 }
 
-#osszeg{
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.658);
-    width: 200px;
-    height: 50px;
-    margin-top: 30px;
-    font-size: 20px;
-    border: 1px solid black;
-    font-weight: bold;
-    text-align: center;
+.kosarba{
+    color: red;
+}
+
+.arak{
+   color: red;
+   font-size: 25px;
+   font-weight: bold;
+   margin-left: 50px;
 }

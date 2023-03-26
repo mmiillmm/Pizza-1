@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/kosar.css">
+    <link rel="icon" href="kepek/pizzaiconrv.png" type="image/x-icon">
     <title>Pizzéria</title>
 </head>
 <body>
@@ -16,16 +17,57 @@
         <div class="menu">
           <ul>
             <li><a href="/20230313  Pizzéria cssgrid oldal készítése/index.html" id="fo">Főoldal</a></li>
-            <li ><a href="" id="etlap">Étlap</a> </li>
+            <li ><a href="/20230313  Pizzéria cssgrid oldal készítése/etlap.html" id="etlap">Étlap</a> </li>
             <li ><a href="/20230313  Pizzéria cssgrid oldal készítése/info.html" id="info">Információ</a></li>
           </ul>
           <button><a href="/20230313  Pizzéria cssgrid oldal készítése/kosar.html"><p>Kosár</p></a></button>
         </div>
 
         <div class="kosar">
-            <div id="nev"><p>Termék neve</p></div>
-            <div id="mennyiseg"><p>Mennyiség</p></div>
-            <div id="Ar"><p>Ár</p></div>
+            <div id="nev">
+                <p>Termék neve</p>
+                <select name="pizza" class="nevek" id="nev" onchange="szamolas( )">
+                    <option value="Margherita">Margherita</option>
+                    <option value="Magyaros">Magyaros</option>
+                    <option value="Mexikói">Mexikói</option>
+                    <option value="Sokk-sajtos">Sokk-sajtos</option>
+                    <option value="Son-kukori">Son-kukori</option>
+                    <option value="Sonkás">Sonkás</option>
+                </select>
+                <select name="pizza" class="nevek" onchange="szamolas( )">
+                    <option value="Margherita">Margherita</option>
+                    <option value="Magyaros">Magyaros</option>
+                    <option value="Mexikói">Mexikói</option>
+                    <option value="Sokk-sajtos">Sokk-sajtos</option>
+                    <option value="Son-kukori">Son-kukori</option>
+                    <option value="Sonkás">Sonkás</option>
+                </select>
+                
+            </div>
+
+            <div id="mennyiseg">
+                <p>Mennyiség</p>
+                <select name="pizza" class="nevek" onchange="szamolas( )">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <select name="pizza" class="nevek" onchange="szamolas( )">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div id="Ar">
+                <p>Ár</p>
+                <input type="number" value="0" id="osszeg"disabled>
+                <input type="number" value="0" id="osszeg"disabled>
+            </div>
         </div>
 
         <div class="ossz">
@@ -34,6 +76,6 @@
         <div id="ar">1234 Ft</div>
 
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
