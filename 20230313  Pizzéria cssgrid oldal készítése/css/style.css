@@ -40,7 +40,6 @@ button{
     align-items: center;
     border: 3px red solid;
     border-radius: 30px;
-    color: red;
     background-color: transparent;
     margin-left: 50px;
     padding: 30px;
@@ -51,6 +50,10 @@ button{
     line-height: 10px;
     font-weight: 200px;
 }
+button p{
+    color:  red;
+}
+
 button:hover{
     cursor: pointer;
 }

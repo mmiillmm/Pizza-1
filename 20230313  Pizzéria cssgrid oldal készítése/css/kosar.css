@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/20230313\ \ Pizzéria\ cssgrid\ oldal\ készítése/kepek/fekete.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.icon{
+    grid-column: 1/ span 1;
+    grid-row: 1/ span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon:hover{
+    cursor: pointer;
+}
+
+#img{
+    width: 100px;
+    height: 100px;
+}
+
+#kosar{
+    width: 80px;
+    height: 50px;
+    
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px red solid;
+    border-radius: 30px;
+    background-color: transparent;
+    margin-left: 50px;
+    padding: 30px;
+    width: 150px;
+    height: 40px;
+    font-family: 'Fasthand', cursive;
+    font-size: 25px;
+    line-height: 10px;
+    font-weight: 200px;
+}
+button p{
+    color:  red;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgb(112, 34, 34);
+    border: 1px solid black;
+    width: 120px;
+    height: 35px;
+}
+
+
+.cont{
+    display: grid;
+    grid-template-columns: repeat(9, 200px);
+    grid-template-rows: repeat(5,190px);
+    color: white;
+}
+.menu{
+    text-align: center;
+    padding: 3px 6px;
+    margin: 50px 50px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 4/ span 3;
+    grid-row: 1;
+    font-family: 'Fasthand', cursive;
+    
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    gap: 65px;
+    font-size: 25px;
+}
+
+#fo:hover{
+    color: green;
+    cursor: pointer;
+}
+
+#etlap:hover{
+    color: lightgrey;
+    cursor: pointer;
+}
+
+#info:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.kosar{
+    /*background-color: white;*/
+    grid-column: 3 / span 5;
+    margin-right: 50px;
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 150px;
+    grid-row: 3;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    color: rgb(72, 66, 66);
+    background-color: rgba(255, 255, 255, 0.658);
+
+}
+
+
+.kosar p{
+    font-size: 25px;
+}
+
+.ossz{
+    grid-column: 4;
+    grid-row: 5;
+    color: rgb(72, 66, 66);
+    background-color: rgba(255, 255, 255, 0.658);
+    margin-bottom: 150px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
+
+.ossz p{
+    font-size: 25px;
+}
+
+#ar{
+    grid-column: 5;
+    grid-row: 5;
+    color: white;
+    border: 2px white solid;
+    margin-bottom: 150px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    font-size: 25px;
+}
