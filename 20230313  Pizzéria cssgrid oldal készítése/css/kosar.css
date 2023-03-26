@@ -173,7 +173,7 @@ select{
     text-align: center;
 }
 
-#osszeg{
+.osszeg{
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.658);
     width: 200px;
