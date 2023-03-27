@@ -158,3 +158,96 @@ a{
 .red{
     color: red;
 }
+
+ol, ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+    padding: 20px 0 20px;
+    vertical-align: middle;
+}
+a:hover, a:focus, a:active {
+    color: #999;
+    text-decoration: none;
+}
+a {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+a {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: rgb(255, 255, 255);
+}
+#fo::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: green;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+#fo:active::before {
+    background-color: green;
+}
+#fo:hover::before, #fo:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+#etlap::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: lightgray;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+#etlap:active::before {
+    background-color: lightgray;
+}
+#etlap:hover::before, #etlap:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+#info::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: red;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+#info:active::before {
+    background-color: red;
+}
+#info:hover::before, #info:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
