@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,76 +9,75 @@
     <link rel="icon" href="kepek/pizzaiconrv.png" type="image/x-icon">
     <title>Pizzéria</title>
 </head>
+
 <body>
-    <div class="cont">
 
-        <div class="icon"><a href="/20230313  Pizzéria cssgrid oldal készítése/index.html"><img src="kepek/pizzaiconrv.png" alt="icon" id="img"></a></div>
-  
-  
-        <div class="menu">
-          <ul>
-            <li><a href="/20230313  Pizzéria cssgrid oldal készítése/index.html" id="fo">Főoldal</a></li>
-            <li ><a href="/20230313  Pizzéria cssgrid oldal készítése/etlap.html" id="etlap">Étlap</a> </li>
-            <li ><a href="/20230313  Pizzéria cssgrid oldal készítése/info.html" id="info">Információ</a></li>
-          </ul>
-          <button><a href="/20230313  Pizzéria cssgrid oldal készítése/kosar.html"><p>Kosár</p></a></button>
+        <div class="nav">
+            <ul>
+                <li><a id="fo" href="">Főoldal</a></li>
+                <li><a id="etlap" href="">Étlap</a></li>
+                <li><a id="info" href="">Információ</a></li>
+                <li><a id="kosar" href="">Kosár</a></li>
+            </ul>
         </div>
+        
+        <div class="compCont">
+            <div class="kosar">
+                <div id="nev">
+                    <p>Termék neve</p>
+                    <select name="pizza" class="nevek" id="nev" onchange="szamolas( )">
+                        <option value="Margherita">Margherita</option>
+                        <option value="Magyaros">Magyaros</option>
+                        <option value="Mexikói">Mexikói</option>
+                        <option value="Sokk-sajtos">Sokk-sajtos</option>
+                        <option value="Son-kukori">Son-kukori</option>
+                        <option value="Sonkás">Sonkás</option>
+                    </select>
+                    <select name="pizza" class="nevek" onchange="szamolas( )">
+                        <option value="Margherita">Margherita</option>
+                        <option value="Magyaros">Magyaros</option>
+                        <option value="Mexikói">Mexikói</option>
+                        <option value="Sokk-sajtos">Sokk-sajtos</option>
+                        <option value="Son-kukori">Son-kukori</option>
+                        <option value="Sonkás">Sonkás</option>
+                    </select>
 
-        <div class="kosar">
-            <div id="nev">
-                <p>Termék neve</p>
-                <select name="pizza" class="nevek" id="nev" onchange="szamolas( )">
-                    <option value="Margherita">Margherita</option>
-                    <option value="Magyaros">Magyaros</option>
-                    <option value="Mexikói">Mexikói</option>
-                    <option value="Sokk-sajtos">Sokk-sajtos</option>
-                    <option value="Son-kukori">Son-kukori</option>
-                    <option value="Sonkás">Sonkás</option>
-                </select>
-                <select name="pizza" class="nevek" onchange="szamolas( )">
-                    <option value="Margherita">Margherita</option>
-                    <option value="Magyaros">Magyaros</option>
-                    <option value="Mexikói">Mexikói</option>
-                    <option value="Sokk-sajtos">Sokk-sajtos</option>
-                    <option value="Son-kukori">Son-kukori</option>
-                    <option value="Sonkás">Sonkás</option>
-                </select>
-                
+                </div>
+
+                <div id="mennyiseg">
+                    <p>Mennyiség</p>
+                    <select name="pizza" class="nevek" onchange="szamolas( )">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <select name="pizza" class="nevek" onchange="szamolas( )">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div id="Ar">
+                    <p>Ár</p>
+                    <input type="number" value="0" class="osszeg" id="osszeg1" disabled>
+                    <input type="number" value="0" class="osszeg" id="osszeg2" disabled>
+                </div>
             </div>
 
-            <div id="mennyiseg">
-                <p>Mennyiség</p>
-                <select name="pizza" class="nevek" onchange="szamolas( )">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <select name="pizza" class="nevek" onchange="szamolas( )">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+            <div class="ossz">
+                <p>Teljes összeg: </p>
             </div>
-
-            <div id="Ar">
-                <p>Ár</p>
-                <input type="number" value="0" class="osszeg" id="osszeg1"disabled>
-                <input type="number" value="0" class="osszeg" id="osszeg2"disabled>
-            </div>
+            <div id="ar"></div>
         </div>
-
-        <div class="ossz">
-            <p>Teljes összeg: </p>
-        </div>
-        <div id="ar"></div>
-
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

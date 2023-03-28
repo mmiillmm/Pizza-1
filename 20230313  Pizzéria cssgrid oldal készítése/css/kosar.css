@@ -4,14 +4,55 @@
 }
 body{
     background-image: url(/20230313\ \ Pizzéria\ cssgrid\ oldal\ készítése/kepek/pizzahatter.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-family: 'Bebas Neue', cursive !important;
 }
 a{
     text-decoration: none;
     color: white;
 }
 
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a{
+    font-size: 1.5vw;
+}
+
+#nev select{
+    max-width: 50vw;
+    width: 15vw;
+    font-size: 1vw;
+}
+
+#mennyiseg select{
+    max-width: 50vw;
+    width: 15vw;
+}
+
+#kosar{
+    padding: 1em;
+    border: 2px solid red;
+    border-radius: 15px;
+    background-color: rgb(99, 0, 0);
+}
+
+#fo{
+    padding: 1em;
+}
+
+#info{
+    padding: 1em;
+}
+
+#etlap{
+    padding: 1em;
+}
 .icon{
     grid-column: 1/ span 1;
     grid-row: 1/ span 1;
@@ -28,10 +69,11 @@ a{
     height: 100px;
 }
 
-#kosar{
-    width: 80px;
-    height: 50px;
-    
+.compCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 button{
@@ -109,39 +151,38 @@ ul{
 }
 
 .kosar{
-    /*background-color: white;*/
-    grid-column: 3 / span 6;
-    margin-right: 50px;
-    padding-top: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 150px;
-    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 30px;
+    border-radius: 30px;
+    width: 75vw;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     gap: 200px;
     color: rgb(72, 66, 66);
     background-color: rgba(255, 255, 255, 0.658);
-
 }
 
 
 .kosar p{
-    font-size: 25px;
+    font-size: 1vw;
     margin-left: 30px;
+    gap: 15px;
 }
 
 .ossz{
-    grid-column: 4;
-    grid-row: 5;
+    margin-top: 1em;
+    padding: 15px;
+    border-radius: 15px;
     color: rgb(72, 66, 66);
     background-color: rgba(255, 255, 255, 0.658);
     margin-bottom: 150px;
     font-weight: bold;
-    display: flex;
-    justify-content: space-evenly;
     padding-top: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .ossz p{
